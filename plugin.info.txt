@@ -4,4 +4,4 @@ email   muller.jan@gmail.com
 date    2015-03-22
 name    syntax mantis
 desc    Creates links into Mantis BT from ~~Mantis:123~~
-url     http://www.dokuwiki.org/plugin:syntaxmantis
+url     https://www.dokuwiki.org/plugin:syntaxmantis
