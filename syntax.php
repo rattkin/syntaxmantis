@@ -14,17 +14,6 @@ if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 require_once(DOKU_PLUGIN.'syntax.php');
  
 class syntax_plugin_syntaxmantis extends DokuWiki_Syntax_Plugin {
-
-    function getInfo(){
-        return array(
-            'author' => 'Jan Müller',
-            'email'  => 'muller.jan@gmail.com',
-            'date'   => '2015-03-23',
-            'name'   => 'syntax mantis',
-            'desc'   => 'Creates links into Mantis BT from ~~Mantis:123~~ ',
-            'url'    => 'http://www.dokuwiki.org/plugin:syntaxmantis',
-        );
-    } 
  
     function getType(){
         return 'substition';
