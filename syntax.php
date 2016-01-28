@@ -31,12 +31,12 @@ class syntax_plugin_syntaxmantis extends DokuWiki_Syntax_Plugin {
     	$this->Lexer->addSpecialPattern('~~Mantis:[0-9]+~~',$mode,'plugin_syntaxmantis');
     }
  
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
 	$match = substr( $match, 9, -2 ); // strip "~~Mantis:" from start and "~~" from end
         return array(strtolower( $match ));
     }
 
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         if($mode == 'xhtml'){
 		$link['target'] = $conf['target']['wiki'];
 		$link['style']  = '';
