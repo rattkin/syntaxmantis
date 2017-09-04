@@ -44,7 +44,7 @@ class syntax_plugin_syntaxmantis extends DokuWiki_Syntax_Plugin {
 		$link['suf']    = '';
 		$link['more']   = '';
 		$link['class']  = 'mantislink';
-		$link['url']    = MANTIS_URL . 'view.php?id=' . $data[0];
+		$link['url']    = $this->getConf('mantis_server') . '/view.php?id=' . $data[0];
 		$link['name']   = $this->getConf('LinkPrefix') . $data[0];
 		$link['title']  = $renderer->_xmlEntities($url);
 	 
